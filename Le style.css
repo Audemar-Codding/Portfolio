@@ -1,0 +1,386 @@
+
+
+/*================================================================================*/
+/*Gestion Couleurs, Fonts*/
+
+:root {
+  /* Styles pour le mode sombre */
+  --Dbackgound: #030422;
+  --DbackgoundSubtle: #1B1525;
+  --DUIbackground: #080938;
+  --DUIbackgroundHover:  #33255B;
+  --DUIbackgroundActiveSelected:  #3C2E69;
+  --DBorderSeparatorSubtle:  #def4ff46;
+  --DUIBorderFocusRing: #56468B;
+  --DUIBorderHover: #6958AD;
+  --DSolidBackground: #1F6692;
+  --DSolidBackgroundHover: #1B537B;
+  --DLowContrastText: #def4ff;
+  --DHighContrastText: #75C7F0;
+
+    /* Styles pour le mode clair */
+    --Cbackgound: #FDFCFE;
+    --CbackgoundSubtle: #FAF8FF;
+    --CUIbackground: #F4F0FE;
+    --CUIbackgroundHover:  #EBE4FF;
+    --CUIbackgroundActiveSelected: #E1D9FF;
+    --CBorderSeparatorSubtle: #D4CAFE;
+    --CUIBorderFocusRing: #C2B5F5;
+    --CUIBorderHover: #AA99EC;
+    --CSolidBackground: #6E56CF;
+    --CSolidBackgroundHover:#3c1dba;
+    --CLowContrastText: #000000;
+    --CHighContrastText: #2F265F;
+}
+
+@font-face {
+  font-family: "FontTitre";
+  src: url('Fonts/NTR-Regular/NTR-Regular.ttf') format("truetype");
+
+  font-family: "FontTexte";
+  src: url('Fonts/NTR-Regular/NTR-Regular.ttf') format("truetype");
+}
+
+/*================================================================================*/
+/*Gestion Jour et Nuit*/
+
+body.DayMode, header.DayMode, nav.DayMode, .BtnLink .DayMode
+{background: var(--Cbackgound);
+color: var(--CLowContrastText);}
+
+body.DarkMode, header.DarkMode, nav.DarkMode a, .BtnLink .DarkMode
+{background: var(--Dbackgound);
+color: var(--DLowContrastText);}
+
+
+h1.DayMode,h2.DayMode,h3.DayMode,h4.DayMode,h5.DayMode,h6.DayMode
+{color: var(--CLowContrastText);
+font-family: "FontTitre";}
+
+h1.DarkMode,h2.DarkMode,h3.DarkMode,h4.DarkMode,h5.DarkMode,h6.DarkMode
+{color: var(--DHighContrastText);
+font-family: "FontTitre";}
+
+#titreNom.DarkMode
+{
+  background: linear-gradient(90deg, var(--DHighContrastText) 25%, var(--DLowContrastText) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#btnsAcceuilContact.DarkMode a, .projectsCards.DarkMode a
+{ background: var(--DSolidBackground);
+  color: var(--DLowContrastText);}
+
+#btnsAcceuilContact.DarkMode a:hover, .projectsCards.DarkMode a:hover
+{background: var(--DSolidBackgroundHover);}
+
+.ShowMoreProject.DarkMode
+{
+  content: url("Pictures/Whiteagrandifenetre.png");
+}
+
+
+/*================================================================================*/
+
+header
+{ 
+  font-family: "FontTexte";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-top: 0.5%;
+  transition: transform 0.25s, height 0.25s, color 0.25s, background 0.25s;
+  z-index: 3;
+
+}
+
+body, html
+{
+  width: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+ /*Le Bug de auteur de détection de hover pour les <a> hors nav viens de la=>  font-family:  'FontTexte'; */
+ /* cursor: url('Pictures/Cursor01.png'), default;*/
+}
+
+#Accueil,#Skills,#Projects
+{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin:  auto;
+  margin-top: 0;
+}
+
+#Intro
+{margin-left: 15px;
+ font-size : clamp(2em, 2.5vw, 2.5em);
+ margin-top: 10%;
+}
+
+.button{
+  left: 0;
+  top:74px;
+  border-radius: 500px;
+  color: white;
+  padding-bottom: -2em;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -2;
+  border-radius: 500px;
+  left: 0;
+  top:74px;
+  width: 100%;
+  height: 78%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px var(--DHighContrastText);
+}
+
+.button:active:after {
+  box-shadow: 0 0 0 0 var(--DLowContrastText);
+  position: absolute;
+  border-radius: 500px;
+
+  opacity: 1;
+  transition: 0s;
+}
+
+
+#btnsAcceuilContact
+{ 
+  margin-top: 5%;
+  display: inline-block;
+}
+
+a {margin-top: 0; margin-bottom: 0;  padding: 0;display: inline-block !important;}
+
+#btnsAcceuilContact a  {
+height: 50px;
+line-height: 50px; 
+display: inline-block;  
+margin:0;
+padding: 0;
+font-size: 0.5em;
+padding-left: 15px;
+padding-right: 15px;
+margin-top: 5px;
+border-radius: 25px;
+}
+
+#ImageMoi
+{
+  width: 65%;
+  user-select: none;
+  position: relative;
+  min-width: 250px;
+  border-radius: 600px;
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+#ImageMoi:hover
+{
+  content: url("Pictures/ImageMoiDarkPixel.png");
+}
+
+#Languages, #Other,#TroisWA
+{ width: 30%;
+  min-width: 200px;
+  font-size: 1.5em;
+/*background: var(--DUIbackground);*/
+padding: 5px;
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+#TroisWA
+{  min-width: 240px;}
+
+.HoverSkill
+{opacity: 0.3;
+transition: opacity 0.3s;
+}
+
+.HoverSkill:hover
+{opacity: 1;}
+
+#Html,#Css,#Javascript,#PHP
+{  opacity: 0;
+position: absolute;
+display: inline-block;
+  transition: opacity 0.1s;
+}
+
+#WhiteHtml:hover ~ #Html, #WhiteCss:hover ~ #Css, #WhiteJs:hover ~ #Javascript, #WhitePHP:hover ~ #PHP
+{opacity: 1; }
+
+#harpoon, #cleanningRoad, #ficheCustom, #ficheCustom
+{position: relative;
+  width: 23%;
+min-width: 230px;
+font-size: 1.1em;
+background: var(--DUIbackground);
+padding: 15px;
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 20px;
+border-radius: 15px;}
+
+.ShowMoreProject
+{
+  display: inline-block;
+margin: 0;
+width: 15px;
+height: 15px;
+text-align: center;
+vertical-align: top; 
+position: absolute;  
+top: 5px;
+right: 5px;
+border-radius: 5px;
+}
+
+
+.projectsCards
+{
+  border:  var(--DBorderSeparatorSubtle) 1px ridge;
+  box-shadow : rgba(0, 0, 0,0.3) 0px 3px 5px;
+
+}
+.projectsCards *
+{padding: 3px;}
+
+.projectGif
+{
+  display: inline-block; 
+  width:30px;
+  height: 30px;
+  margin-bottom:-5px; 
+}
+
+.projectsCards:not(:hover) .projectGif
+{
+  animation-name: Giftransition; 
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.projectsCards a
+{
+width: auto;
+border-radius: 15px;
+padding: 5px;
+}
+
+/*===============================================================================  */
+
+a,#ImageMoi
+{text-decoration: none;}
+
+
+#imageWindows
+{ display: none;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  width: 60%;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #070000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+padding: 30px;
+}
+
+#imageFocus
+{ border-radius: 10px;
+  width: 100%; 
+  height: 100%; 
+  margin:0;
+  position: relative;}
+
+  #imageFocusClose {
+    font-size: 2.5vh;
+    color: var(--couleur-texte);
+    font-weight: 450;
+    text-shadow: 0px 0px 4px var(--couleur-texte);
+    font-family: sans-serif;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+
+  }
+
+
+
+
+/*Animations*/
+/*=========================================================================*/
+
+@keyframes Giftransition {
+  0%   {opacity:0 } 
+  100% {opacity:1 }  }
+
+.gradient {
+  --size: 250px;
+  --speed: 25s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+position: absolute;
+margin-top: -50px;
+z-index: -1;
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsla(244, 85%, 15%, 0.85),rgb(30, 16, 133));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+
+
+/*================================================================================*/
+/*Gestion Accéssiilité*/
+
+@media all and (max-width: 840px)
+{
+
+}
