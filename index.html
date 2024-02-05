@@ -3,23 +3,24 @@
 <head>
   <link rel="stylesheet" type="text/css" href="Le style.css"/>
   <link rel="icon" type="image/png" href="wheelbarrow.png">
-  <title>JDR PORtofollio</title>
+  <title>Romain Audemar Portofollio</title>
 </head>
 
 <header class="DarkMode" >
   <span id="logoHeader" title="Audemar Romain" style="width: 50px;margin-left: 15px;">
-  <img id="logoHeaderImg" src="LOGORAcoloredDark.png" style="width: 100%; height: auto;"/>
+  <img id="logoHeaderImg" src="Pictures/LogoAR.png" style="width: 100%; height: auto;"/>
   </span> 
 
   <nav class="DarkMode" style="font-size: 1.5em; width: auto; font-weight:500;margin-right: 15px; ">
-    <a  href="#Accueil" id="accueil">Accueil</a>
-    <a  href="#Projets" id="projets">Projets</a>
-    <a  href="" id="parcours">Parcours</a>
-    <a  href="" id="contact">Contact</a>
-  </nav>
+    <a  href="#skillsNavTarget" id="skills" style="margin-right: 10px;"><span class="numberNav">1.</span> Skills</a>
+    <a  href="#projectNavTarget" id="projets" style="margin-right: 10px;"><span class="numberNav">2.</span> Projects</a>
+    <a  href="#Contact" id="contact"><span class="numberNav">3.</span> Contact</a>
+     </nav>
 
 </header>
 
+
+<img  id="Flags" src="Pictures/FlagEnglish.png" draggable="false" style="right: 15px; top:15px; position: absolute; width: 40px;" onclick="changeLanguage()"/>
 
 
 <body class="DarkMode">
@@ -37,22 +38,23 @@
           <h1 style="line-height: 1.2;font-size: 0.6em;font-weight: 400;height: 25px; padding-left: 5px;border-radius: 3px;width: 50%;"> Wellcome, i am -</h1>
 
 
-         <h1 class="DarkMode" id="titreNom" style="font-size: 3.5em;line-height: 0.75;margin-top: 0px;margin-bottom: 40px;">Romain Audemar</h1>
+         <h1 class="DarkMode" id="titreNom" style="font-size: 3em;line-height: 0.75;margin-top: 0px;margin-bottom: 40px;">Romain Audemar</h1>
          
           <p style="font-size: 1.5em;line-height: 0.80;margin-bottom: 0;margin-top: 0px;">Web developper, game and application creator.</p>
           
-<div id="btnsAcceuilContact" class="DarkMode">
+<div class="btnsContact DarkMode">
   <a  target="_blank" href="https://github.com/Audemar-Codding" style="text-decoration: none;">   <img src="Pictures/WhiteGitHub.png" style="margin-top: -5px;vertical-align: middle;width: 30px; height: 30px;"/> Github</a>
   <a  target="_blank" href="https://www.linkedin.com/in/romain-audemar/" style="text-decoration: none;">   <img src="Pictures/WhiteLinkedIn.png" style="margin-top: -5px;vertical-align: middle;width: 30px; height: 30px;"/> LinkedIn</a>
   <a  target="_blank" href="mailto:romain.audemar2@gmail.com" style="text-decoration: none;">   <img src="Pictures/WhiteMail.png" style="margin-top: -5px;vertical-align: middle;width: 30px; height: 25px;"/> Mail</a>
-   <!--Ca doit lier le pdf dans la bonne langue--> <a  target="_blank" href="CVAudemar Romain.pdf" style="text-decoration: none;">   <img src="Pictures/WhiteCV.png" style="margin-top: -5px;vertical-align: middle;width: 30px; height: 25px;"/> Resume</a>  
+  <a  target="_blank" href="https://calendly.com/equipe-3wa/prise-de-contact-entreprise-eleve?utm_content=Romain%20Audemar&utm_campaign=recpiNVVmPCr6uq9L&utm_source=%2033767420012&month=2024-02" ><img src="Pictures/Whitecalendar.png" style="margin-top: -5px;vertical-align: middle;width: 30px; height: 25px;"/><span class="text"> Interview</span></a> 
+<a  target="_blank" href="CVAudemar Romain.pdf" style="text-decoration: none;">   <img src="Pictures/WhiteCV.png" style="margin-top: -5px;vertical-align: middle;width: 30px; height: 25px;"/><span class="text"> Resume</span></a>    <!--Ca doit lier le pdf dans la bonne langue--> 
 </div>
 
           
         </div>
       
       <div id="ImageMoiResizeGrand">
-        <div id="containerImageMoi" style="margin-left: 15px; margin-top: 100px;">
+        <div id="containerImageMoi" style="margin-left: 15%; margin-top: 100px;">
           <a><img id="ImageMoi" draggable="false" onclick="" src="Pictures/ImageMoiDark.png"/></a>   
         </div>
       </div>
@@ -62,13 +64,15 @@
 
 </section>
 
-<section id="Skills" style="margin-top: 25vh;display: block;">
+<div id="skillsNavTarget" style="margin: 0;  margin-top: 25vh;"><span style="opacity: 0;">.</span></div>
+
+<section id="Skills" style="margin-top: 5vh;display: block;">
   <div style="margin: auto;">
 <h1 style="text-align: center;font-size: 3.5em;line-height: 1;margin-bottom: 0px;">Skills</h1>
 <h2 style="text-align: center;margin-bottom: 40px;">"A good developper it's a developper who know nothing."</h2>
 </div>
 
-<div style="display: flex; align-items: start; flex-wrap: wrap;">
+<div style="display: flex; justify-content: space-evenly;align-items: start; flex-wrap: wrap;">
 
   <div id="Languages">
    <p style="font-size: 1.8em; margin: auto;text-align: center;margin-bottom: 30px;">Languages</p>
@@ -143,7 +147,7 @@
  
     <div style="margin-top: 15px;">
      <img src="Pictures/WhiteAndroidStudio.png" style="vertical-align: middle;width: 20px; height: 20px;margin-right: 5px;"/>
-      <p style="display: inline-block; margin: 0;vertical-align: middle;">AndroidStudio</p> 
+      <p style="display: inline-block; margin: 0;vertical-align: middle;">Android Studio</p> 
     </div>
   </div>
    </div>
@@ -158,11 +162,12 @@
 
 </section>
 
-<section id="Projects" style="margin-top: 15vh; display: block;">
-  <div style="margin: auto;">
-<h1 style="text-align: center;font-size: 3.5em;line-height: 1;margin-bottom: 40px;">Projects</h1>
+<div id="projectNavTarget" style="margin: 0;  margin-top: 0vh;"><span style="opacity: 0;">.</span></div>
 
-</div>
+<section id="Projects" style="margin-top: 5vh; display: block;">
+
+<h1 style="text-align: center;font-size: 3.5em;line-height: 1;margin: auto;;margin-bottom: 40px;">Projects</h1>
+
 
 <div style="display: flex; justify-content: space-evenly;align-items: center; flex-wrap: wrap;">
 
@@ -178,7 +183,7 @@
 <p>My First Typescript game made in one go.</p>
 
 <div class="LinkOfProject" style="display: flex; justify-content: space-evenly;align-items: center;">
-  <a href="https://badeorne.itch.io/harpoon"  target="_blank" style="text-decoration: none;  color: inherit;"><img src="Pictures/Whiteplay-button.png" style="margin-top: -5px;vertical-align: middle;width: 25px; height: 25px;margin-right: 5px;padding-left: 5px;"/><p style="margin: 0;width: 20%;  display: inline-block; font-size: 2.5vh;">Play</p></a>
+  <a href="https://badeorne.itch.io/harpoon"  target="_blank" style="text-decoration: none;  color: inherit;"><img src="Pictures/Whiteplay-button.png" style="margin-top: -5px;vertical-align: middle;width: 25px; height: 25px;padding-left: 5px;"/><p class="Play" style="margin: 0;width: 20%;  display: inline-block; font-size: 2.5vh;">Play</p></a>
   
   <a href="https://github.com/Audemar-Codding" target="_blank" style="text-decoration: none;  color: inherit;"><img src="Pictures/WhiteGitHub.png" style="margin-top: -5px;vertical-align: middle;width: 25px; height: 25px;margin-right: 5px;"/><p style="display: inline-block; margin: 0; ;width: 20%;   font-size: 2.5vh;">GitHub</p></a>
 </div>
@@ -203,7 +208,7 @@
 <p>A more substantial game, following Harpoon.</p>
 
 <div class="LinkOfProject" style="display: flex; justify-content: space-evenly;align-items: center;">
-  <a href="https://badeorne.itch.io/on-the-space-road-a-cleaner-week-demos"  target="_blank" style="text-decoration: none;  color: inherit;"><img src="Pictures/Whiteplay-button.png" style="margin-top: -5px;vertical-align: middle;width: 25px; height: 25px;margin-right: 5px;padding-left: 5px;"/><p style="margin: 0;width: 20%;  display: inline-block; font-size: 2.5vh;">Play</p></a>
+  <a href="https://badeorne.itch.io/on-the-space-road-a-cleaner-week-demos"  target="_blank" style="text-decoration: none;  color: inherit;"><img src="Pictures/Whiteplay-button.png" style="margin-top: -5px;vertical-align: middle;width: 25px; height: 25px;margin-right: 5px;padding-left: 5px;"/><p class="Play" style="margin: 0;width: 20%;  display: inline-block; font-size: 2.5vh;">Play</p></a>
   
   <a href="https://github.com/Audemar-Codding" target="_blank" style="text-decoration: none;  color: inherit;"><img src="Pictures/WhiteGitHub.png" style="margin-top: -5px;vertical-align: middle;width: 25px; height: 25px;margin-right: 5px;"/><p style="display: inline-block; margin: 0; ;width: 20%;   font-size: 2.5vh;">GitHub</p></a>
 </div>
@@ -247,52 +252,36 @@
 
 </section>
 
-<section id="contact">
-
-<div class="container">
-  <form action="formulaire.php" method="post">
-
-    <p>
-        <label  for="nom">Nom :</label>
-        <input  type="text"  id="nom"  name="user_name" value="<?php if(isset($_POST['nom'])) echo $_POST['nom1']; ?>" />
-    </p>
-    <p><?php if(isset($errors['nom1'])) echo $errors['nom1']; ?></p>
-
-    <p>
-        <label  for="prenom">Prénom :</label>
-        <input  type="text"  id="prenom"  name="user_surname" value="<?php if(isset($_POST['prenom'])) echo $_POST['prenom1']; ?>" />
-    </p>
-    <p><?php if(isset($errors['prenom1'])) echo $errors['prenom1']; ?></p>
-
-
-    <p>
-        <label  for="telephone">Téléphone :</label>
-        <input  type="text"  id="telephone"  name="user_telephone" value="<?php if(isset($_POST['telephone'])) echo $_POST['telephone1']; ?>" />
-    </p>
-    <p><?php if(isset($errors['telephone1'])) echo $errors['telephone1']; ?></p>
-
-    <p>
-        <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="user_email" value="<?php echo $courriel2; ?>" />
-    </p>
-    <p><?php if(isset($errors['courriel1'])) echo $errors['courriel1']; ?></p>
-
-    <label  for="message">Message :</label>
-    <textarea  id="message"  name="user_message"></textarea>
-
-    <p>
-    <div  class="button">
-        <button  type="submit">Envoyer votre message</button>
+<section id="Contact" style="margin-top: 25vh;">
+  
+    <div style="margin: auto;">
+  
+    <div>
+        <h1 style="text-align: center;font-size: 3.5em;line-height: 0.5;margin-bottom: 0px;">Contact</h1>
+        <p style="text-align: center;margin-bottom: 10px; font-size: 1.25em;">Feel free to contact me</p>
     </div>
-    </p>
-</form>
-</div>
+
+      
+      
+    <div class="btnsContact DarkMode">
+<a  target="_blank" href="https://www.linkedin.com/in/romain-audemar/" style="text-decoration: none; font-size: 1.5em;">   <img src="Pictures/WhiteLinkedIn.png" style="margin-top: -5px;vertical-align: middle;width: 30px; height: 30px;"/> LinkedIn</a>
+<a  target="_blank" href="mailto:romain.audemar2@gmail.com" style="text-decoration: none; font-size: 1.5em;;margin-left: 15px">   <img src="Pictures/WhiteMail.png" style="margin-top: -5px;vertical-align: middle;width: 30px; height: 25px;"/> Mail</a>
+<a  target="_blank" href="https://calendly.com/equipe-3wa/prise-de-contact-entreprise-eleve?utm_content=Romain%20Audemar&utm_campaign=recpiNVVmPCr6uq9L&utm_source=%2033767420012&month=2024-02" style="text-decoration: none; font-size: 1.5em;;margin-left: 15px">   <img src="Pictures/Whitecalendar.png" style="margin-top: -5px;margin-right : 5px;vertical-align: middle;width: 30px; height: 25px;"/><span class="text">Interview</span></a>
+    </div>
+
+      
+    </div>
 
 </section>
 
 
+<section style="margin: auto;width: 25%;margin-top: 15vh;margin-bottom: 10vh;">
 
-<div style="margin-top: 150px ;" >NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</div>
+  <p style="margin: auto;text-align: center;" >Designed and built by Romain Audemar</p>
+  <p style="margin: auto;text-align: center;" ><a href="">legal Mentions</a></p>
+
+</section>
+
 
 
 
@@ -300,7 +289,102 @@
 <script>
 
 
+// Gestion du changement de la langue du site
+var Flags = document.getElementById("Flags");
+var ImgEng = "Pictures/FlagEnglish.png";
+var ImgFr = "Pictures/FlagFrench.png";
 
+  //ce qu'il faut gérer
+  var Nav1 = document.getElementById("skills");
+  var Nav2 = document.getElementById("projets");
+
+  var Intro = document.getElementById("Intro");
+  var BtnIntro = document.querySelector(".btnsContact");
+  var BtnRDV = document.querySelector(".btnsContact > a:nth-of-type(4) .text")
+  var BtnCV = document.querySelector(".btnsContact > a:nth-of-type(5) .text")
+
+  var Skills = document.getElementById("Skills");
+  var Languages = document.getElementById("Languages");
+  var Other = document.getElementById("Other");
+
+  var ProjectTitle = document.querySelector("#Projects > h1");
+  var Harpoon = document.getElementById("harpoon");
+  var Cleanning = document.getElementById("cleanningRoad");
+  var FicheCustom = document.getElementById("ficheCustom")
+  var Play = document.querySelectorAll(".Play");
+   
+  var ContactText = document.querySelector("#Contact p");
+  var ContactInterview = document.querySelector("#Contact .text");
+
+  var LanguageSelected = 1;
+
+  
+
+function changeLanguage()
+{
+  if(LanguageSelected==0)
+  { Flags.src = ImgEng;
+    Nav1.innerHTML  = "<span class='numberNav'>1.</span> Skills";
+    Nav2.innerHTML  = "<span class='numberNav'>2.</span> Projects";
+
+    Intro.children[0].innerText = " Wellcome, i am -"; 
+    Intro.children[2].innerText = " Web developper, game and application creator.";
+
+    BtnRDV.innerHTML = " Interview";
+    BtnCV.innerHTML = " Resume";
+    // mettre le cv
+
+    Skills.children[0].children[0].innerText = "Skills";
+    Skills.children[0].children[1].innerText = '\"A good developper it\'s a developper who know nothing.\"';
+    Languages.children[0].innerText = "Languages";
+    Other.children[0].innerText = "Other";
+
+    ProjectTitle.innerText = "Projects";
+    Harpoon.children[3].innerText = "My First Typescript game made in one go.";
+    Cleanning.children[3].innerText = "A more substantial game, following Harpoon.";
+    FicheCustom.children[0].innerText = "Custom Sheet"; 
+    FicheCustom.children[3].innerText = "A custom roleplay sheet made in html et css."; 
+
+    Play[0].innerText = "Play";
+    Play[1].innerText = "Play";
+
+    ContactText.innerHTML ="Feel free to contact me";
+    ContactInterview.innerText = "Interview";
+
+  }
+  else{Flags.src = ImgFr;
+    Nav1.innerHTML  = "<span class='numberNav'>1.</span> Compétences";
+    Nav2.innerHTML  = "<span class='numberNav'>2.</span> Projets";
+
+    Intro.children[0].innerText = " Bienvenue, je suis -"; 
+    Intro.children[2].innerText = "Developpeur Web, créateur de jeux et d'applications.";
+
+    BtnRDV.innerHTML = " Entretien";
+    BtnCV.innerHTML = " Mon CV";
+    BtnIntro.children[4].href = "CVAudemar Romain-FR.pdf";
+
+    Skills.children[0].children[0].innerText = "Compétences";
+    Skills.children[0].children[1].innerText = '\"Un bon developpeur c\'est un deceloppeur qui ne sait rien.\"';
+    Languages.children[0].innerText = "Langages";
+    Other.children[0].innerText = "Autre";
+    
+      ProjectTitle.innerText = "Projets";
+      Harpoon.children[3].innerText = "Mon premier jeu Typescript fait d'une traite.";
+      Cleanning.children[3].innerText = "Un jeu plus conséquent, à la suite de harpoon"; 
+      FicheCustom.children[0].innerText = "Fiche Custom"; 
+      FicheCustom.children[3].innerText = "Une fiche custom de roleplay faite en html et css."; 
+
+      Play[0].innerText = "Jouer";
+      Play[1].innerText = "Jouer";
+
+    ContactText.innerHTML ="N'hésitez pas à me contacter";
+    ContactInterview.innerText = "Entretien";
+
+  }
+
+    //changement de la variable qui gére le language 
+  LanguageSelected = (LanguageSelected === 1) ? 0 : 1;
+}
 
 
 var Mypicture = document.getElementById("ImageMoi");
@@ -326,8 +410,9 @@ Mypicture.addEventListener('click', function(event) {
     plusUN.style.zIndex = "4"
     plusUN.style.userSelect = "none";
     plusUN.style.fontSize = "2em"
-    plusUN.style.transition = 'top 1s ease-out, opacity 0.25s';
+    plusUN.style.transition = 'top 2s ease-out, opacity 1s ease-out';
     plusUN.style.pointerEvents = "none";
+    plusUN.style.position = "fixed"; // en absolute le scroll perturbe le positionnement
 plusUN.draggable = false;
 
     plusUN.style.left = (event.clientX -30) + 'px';
@@ -336,16 +421,16 @@ plusUN.draggable = false;
     document.body.appendChild(plusUN);
 
   setTimeout(() => {
-    plusUN.style.top = (event.clientY - 100) + 'px';
+    plusUN.style.top = (event.clientY - 200) + 'px';
   }, 10);
 
     setTimeout(() => {
       plusUN.style.opacity = '0';
-    }, 600);
+    }, 650);
 
     setTimeout(() => {
         document.body.removeChild(plusUN);
-    }, 650);
+    }, 1650);
 
 
 });
@@ -369,6 +454,16 @@ document.getElementById("ficheCustom").addEventListener('mouseleave', function()
 document.getElementById("ficheCustom").addEventListener('mouseenter', function()
 {document.getElementById("projectFolder").src= "Pictures/GifFolder.webp"+'?' + new Date().getTime();})
 
+//Gestion des numéros sur le nav
+var nav = document.querySelector('nav');
+function onKeyPress(event) {
+
+  if(event.code == "Digit0" || event.code == "Numpad0")
+{   document.getElementById("logoHeader").scrollIntoView({ behavior: 'smooth' });}
+if(event.code == "Digit1" || event.code == "Numpad1"){ nav.children[0].click();}
+if(event.code == "Digit2" || event.code == "Numpad2"){ nav.children[1].click();}
+if(event.code == "Digit3" || event.code == "Numpad3"){ nav.children[2].click();} }
+  document.addEventListener('keypress', onKeyPress);
 
 // La fonction pour géré le redimenssionement responssive
 const percentDeBase = 60;
@@ -379,12 +474,14 @@ const header = document.querySelector('header');
 const acceuil = document.getElementById("Accueil");
 const skills = document.getElementById("Skills");
 const projects = document.getElementById("Projects");
+const contact = document.getElementById("Contact");
 
 const containerImageMoi = document.getElementById("containerImageMoi");
 const imageMoiResizePettit = document.getElementById("ImageMoiResizePettit");
 const imageMoiResizeGrand = document.getElementById("ImageMoiResizeGrand");
 const imageMoi = document.getElementById("ImageMoi");
 const intro = document.getElementById("Intro");
+
 
 function resize() {
 
@@ -408,6 +505,8 @@ if (windowWidth < 755)
   imageMoi.style.width = "80%";
   intro.style.marginTop = "10%"
   containerImageMoi.style.marginTop = "100px";
+
+  intro.style.width = "100%";
 }
 
 
@@ -430,6 +529,7 @@ if (windowWidth < 755)
     acceuil.style.width = Math.min((percentDeBase+percentAdd),100)+'%';
     skills.style.width = Math.min((percentDeBase+percentAdd),100)+'%';
     projects.style.width = Math.min((percentDeBase+percentAdd),100)+'%';
+    contact.style.width = Math.min((percentDeBase+percentAdd),100)+'%';
     
 }
 
