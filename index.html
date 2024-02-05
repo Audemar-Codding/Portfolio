@@ -275,10 +275,10 @@
 </section>
 
 
-<section style="margin: auto;width: 25%;margin-top: 15vh;margin-bottom: 10vh;">
+<section id="Details" style="margin: auto;width: 25%;margin-top: 15vh;margin-bottom: 10vh;">
 
   <p style="margin: auto;text-align: center;" >Designed and built by Romain Audemar</p>
-  <p style="margin: auto;text-align: center;" ><a href="">legal Mentions</a></p>
+ <p style="margin: auto;text-align: center;" > <a href="">legal Mentions</a></p>
 
 </section>
 
@@ -316,6 +316,8 @@ var ImgFr = "Pictures/FlagFrench.png";
   var ContactText = document.querySelector("#Contact p");
   var ContactInterview = document.querySelector("#Contact .text");
 
+  var Details = document.getElementById("Details");
+
   var LanguageSelected = 1;
 
   
@@ -351,6 +353,9 @@ function changeLanguage()
     ContactText.innerHTML ="Feel free to contact me";
     ContactInterview.innerText = "Interview";
 
+    Details.children[0].innerText = "designed and produced by Romain Audemar";
+    Details.children[1].children[0].innerText = "legal Mentions";
+
   }
   else{Flags.src = ImgFr;
     Nav1.innerHTML  = "<span class='numberNav'>1.</span> Compétences";
@@ -379,6 +384,9 @@ function changeLanguage()
 
     ContactText.innerHTML ="N'hésitez pas à me contacter";
     ContactInterview.innerText = "Entretien";
+
+    Details.children[0].innerText = "designé et réalisé par Romain Audemar";
+    Details.children[1].children[0].innerText = "Mentions légales";
 
   }
 
