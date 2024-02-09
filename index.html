@@ -425,6 +425,8 @@ let upExp = 10;
 let IndexplusUN = 0; 
 
 // Quand on clique sur l'image
+ImgAlien = "Pictures/GifAlien.gif";
+
 Mypicture.addEventListener('click', function(event) {
 
   //Mypicture.src = ("Pictures/MyPictureMeblackPIXELATED.png")
@@ -432,7 +434,7 @@ Mypicture.addEventListener('click', function(event) {
 // setTimeout(function() {    Mypicture.src = ("Pictures/MyPictureMeblack-modified.png")    }, 250);
 
     var plusUN = document.createElement('img');
-    plusUN.src = "Pictures/GifAlien.gif"+'?' + new Date().getTime();
+    plusUN.src = ImgAlien+'?' + new Date().getTime();
     plusUN.alt = "Top Arrow";
     plusUN.width = "50";
     plusUN.height = "50";
