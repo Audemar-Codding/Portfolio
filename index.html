@@ -471,6 +471,12 @@ plusUN.draggable = false;
 FishPng = "Pictures/PictureFish.png";
 FishGif = "Pictures/GifFish.gif";
 
+CleanningPng = "Pictures/PictureRocket.png";
+CleanningGif = "Pictures/PictureRocket.gif";
+
+
+FolderPng = "Pictures/PictureFolder.png";
+FolderGif = "Pictures/PictureFolder.gif";
 
 
 document.getElementById("projectFish").src= FishPng;
@@ -479,17 +485,17 @@ document.getElementById("harpoon").addEventListener('mouseleave', function()
 document.getElementById("harpoon").addEventListener('mouseenter', function()
 {document.getElementById("projectFish").src= FishGif})
 
-document.getElementById("projectRocket").src= "Pictures/PictureRocket.png"
+document.getElementById("projectRocket").src= CleanningPng;
 document.getElementById("cleanningRoad").addEventListener('mouseleave', function()
-{document.getElementById("projectRocket").src= "Pictures/PictureRocket.png"})
+{document.getElementById("projectRocket").src= CleanningPng;})
 document.getElementById("cleanningRoad").addEventListener('mouseenter', function()
-{document.getElementById("projectRocket").src= "Pictures/GifRocket.gif"+'?' + new Date().getTime();})
+{document.getElementById("projectRocket").src= CleanningGif;})
 
-document.getElementById("projectFolder").src= "Pictures/PictureFolder.png"
+document.getElementById("projectFolder").src= FolderPng;
 document.getElementById("ficheCustom").addEventListener('mouseleave', function()
-{document.getElementById("projectFolder").src= "Pictures/PictureFolder.png"})
+{document.getElementById("projectFolder").src= FolderPng})
 document.getElementById("ficheCustom").addEventListener('mouseenter', function()
-{document.getElementById("projectFolder").src= "Pictures/GifFolder.gif"+'?' + new Date().getTime();})
+{document.getElementById("projectFolder").src= FolderGif;})
 
 //Gestion des numéros sur le nav
 var nav = document.querySelector('nav');
