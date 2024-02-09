@@ -33,7 +33,7 @@
 
         <div id="Intro">
   
-        <h3> Welcome,q^ùekgj^spoekrh^presdkh^pk i am -</h3>
+        <h3> Welcome, i am -</h3>
         <h1 class="DarkMode" id="titreNom">Romain Audemar</h1>
         <p>Web developer, game and application creator.</p>
           
@@ -426,6 +426,11 @@ let IndexplusUN = 0;
 
 // Quand on clique sur l'image
 ImgAlien = "Pictures/GifAlien.gif";
+var plusSource = document.createElement('img');
+plusSource.src = ImgAlien;
+plusSource.style.display = "none";
+
+var counterplus = 0;
 
 Mypicture.addEventListener('click', function(event) {
 
@@ -433,11 +438,13 @@ Mypicture.addEventListener('click', function(event) {
 
 // setTimeout(function() {    Mypicture.src = ("Pictures/MyPictureMeblack-modified.png")    }, 250);
 
-    var plusUN = document.createElement('img');
-    plusUN.src = ImgAlien+'?' + new Date().getTime();
+    counterplus++;
+    var plusUN = plusSource.cloneNode(true);
+    plusUN.src = ImgAlien + '?nocache=' + counterplus;
     plusUN.alt = "Top Arrow";
     plusUN.width = "50";
     plusUN.height = "50";
+    plusUN.style.display = "block";
     plusUN.style.position = "fixed";  
     plusUN.style.zIndex = "4"
     plusUN.style.userSelect = "none";
