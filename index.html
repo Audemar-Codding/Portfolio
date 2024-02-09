@@ -287,7 +287,7 @@
 
 
 
-<script defer>
+<script>
 
 
 // Gestion du changement de la langue du site
@@ -466,11 +466,18 @@ plusUN.draggable = false;
 });
 
 // Gestion hover des projects.
-document.getElementById("projectFish").src= "Pictures/PictureFish.png"
+
+
+FishPng = "Pictures/PictureFish.png";
+FishGif = "Pictures/GifFish.gif";
+
+
+
+document.getElementById("projectFish").src= FishPng;
 document.getElementById("harpoon").addEventListener('mouseleave', function()
-{document.getElementById("projectFish").src= "Pictures/PictureFish.png"})
+{document.getElementById("projectFish").src= FishPng})
 document.getElementById("harpoon").addEventListener('mouseenter', function()
-{document.getElementById("projectFish").src= "Pictures/GifFish.gif"+'?' + new Date().getTime();})
+{document.getElementById("projectFish").src= FishGif})
 
 document.getElementById("projectRocket").src= "Pictures/PictureRocket.png"
 document.getElementById("cleanningRoad").addEventListener('mouseleave', function()
