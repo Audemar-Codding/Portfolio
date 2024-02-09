@@ -31,6 +31,9 @@
     --CSolidBackgroundHover:#3c1dba;
     --CLowContrastText: #000000;
     --CHighContrastText: #2F265F;
+
+    /*Variable pour image moi*/
+    --ImagePixel: url("Pictures/ImageMoiDarkPixel.png") ;
 }
 
 @font-face {
@@ -76,7 +79,7 @@ font-family: "FontTitre";}
 {background: var(--DSolidBackgroundHover);}
 
 .ShowMoreProject.DarkMode
-{  content: url("Pictures/Whiteagrandifenetre.png");}
+{  content: url("Pictures/ImageMoiDarkPixel.png")}
 
 .numberNav
 {  color: var(--DHighContrastText);}
@@ -229,7 +232,7 @@ border-radius: 25px;}
 
 #ImageMoi:hover
 {
-  content: url("Pictures/ImageMoiDarkPixel.png");
+  content: var(--ImagePixel);
 }
 
 #skillsNavTarget{margin-top: 25vh;}
