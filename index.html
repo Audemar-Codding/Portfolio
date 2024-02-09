@@ -22,6 +22,7 @@
 
 <img  id="Flags" src="Pictures/FlagEnglish.png" draggable="false" onclick="changeLanguage()"/>
 <img  id="Travaux" src="Pictures/BannerEnTravaux.png" draggable="false"/>
+<p>IN PROGRESS...</p>
 
 <body class="DarkMode">
 
@@ -451,17 +452,18 @@ plusUN.draggable = false;
 
  
 
-  setTimeout(() => {
+  var Timeout = setTimeout(() => {
     plusUN.style.top = (event.clientY - 200) + 'px';
   }, 10);
 
     setTimeout(() => {
       plusUN.style.opacity = '0';
-    }, 650);
+    }, 450);
 
     setTimeout(() => {
         document.body.removeChild(plusUN);
-    }, 1650);
+        clearTimeout(Timeout);
+    }, 1450);
 
 
 });
