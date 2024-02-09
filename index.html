@@ -425,22 +425,12 @@ let upExp = 10;
 let IndexplusUN = 0; 
 
 // Quand on clique sur l'image
-ImgAlien = "Pictures/GifAlien.gif";
-var plusSource = document.createElement('img');
-plusSource.src = ImgAlien;
-plusSource.style.display = "none";
-
-var counterplus = 0;
+ImgAlien = "Pictures/GifAlien.webp";
 
 Mypicture.addEventListener('click', function(event) {
 
-  //Mypicture.src = ("Pictures/MyPictureMeblackPIXELATED.png")
-
-// setTimeout(function() {    Mypicture.src = ("Pictures/MyPictureMeblack-modified.png")    }, 250);
-
-    counterplus++;
-    var plusUN = plusSource.cloneNode(true);
-    plusUN.src = ImgAlien + '?nocache=' + counterplus;
+    var plusUN = document.createElement('img');
+    plusUN.src = ImgAlien;
     plusUN.alt = "Top Arrow";
     plusUN.width = "50";
     plusUN.height = "50";
@@ -458,6 +448,8 @@ plusUN.draggable = false;
     plusUN.style.top = (event.clientY - 40) + 'px';
 
     document.body.appendChild(plusUN);
+
+ 
 
   setTimeout(() => {
     plusUN.style.top = (event.clientY - 200) + 'px';
