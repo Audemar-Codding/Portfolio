@@ -79,7 +79,7 @@ font-family: "FontTitre";}
 {background: var(--DSolidBackgroundHover);}
 
 .ShowMoreProject.DarkMode
-{  content: url("Pictures/ImageMoiDarkPixel.png")}
+{  content: url("Pictures/agrandir-la-fenetre.png")}
 
 .numberNav
 {  color: var(--DHighContrastText);}
