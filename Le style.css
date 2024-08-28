@@ -77,7 +77,7 @@ header
   width: 60%;
   margin: auto;
   margin-top: 10px;
-  transition: transform 0.25s, height 0.25s, color 0.25s, background 0.25s;
+  transition: trans 0.25s, height 0.25s, color 0.25s, background 0.25s;
 }
 
 header span {width: 50px;margin-left: 15px;}
@@ -90,7 +90,7 @@ nav a:not(#Contact) {margin-right: 5px;}
 
 #Flags {right: 15px; top:15px; position: absolute; width: 40px;   cursor: pointer;}
 #Travaux {left:0; top:0; position: absolute; width: 95px;z-index: 4;}
-#Travaux + p {transform: rotate(-45deg);font-size: 0.5em;color: yellow; left: -18px;top:28px;position: absolute;z-index: 3;opacity: 0;transition: font-size 0.5s, opacity 1s;}
+#Travaux + p {trans: rotate(-45deg);font-size: 0.5em;color: yellow; left: -18px;top:28px;position: absolute;z-index: 3;opacity: 0;transition: font-size 0.5s, opacity 1s;}
 #Travaux:hover + p {opacity: 1;font-size: 1.5em;}
 
 
@@ -280,7 +280,6 @@ margin-left: 10px;
 margin-top: 10px;
 margin-bottom: 20px;
 border-radius: 15px;
-a{color:white}
 }
 
 .ShowMoreProject
@@ -368,7 +367,7 @@ a,#ImageMoi
   left: 50%;
   width: 60%;
   height: 80vh;
-  transform: translate(-50%, -50%);
+  trans: translate(-50%, -50%);
   background-color: var(--DUIbackground);
   border-radius: 10px;
   z-index: 10;
