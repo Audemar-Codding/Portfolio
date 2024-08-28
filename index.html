@@ -228,7 +228,7 @@
 
   <div id="ficheCustom" class="projectsCards DarkMode">
 
-    <p>Custom Sheet</p>
+    <p>Website posit'it</p>
 
     <img  id="projectFolder" class="projectGif" loop="false"/>
     <img class="ShowMoreProject DarkMode" src="Pictures/agrandir-la-fenetre.png" onclick="FocusImage(this)"/>
@@ -236,10 +236,8 @@
     <div>
       <img id="imageFocus1" src="Pictures/ImageFicheRoll201.png">
       <img id="imageFocus2" src="Pictures/ImageFicheRoll202.png"> <p id="imageFocusClose" onclick="CloseWindows()">X</p> 
-      <h2>Custom sheet</h2>
-      <p class="text">C'est le projet qui ma permit de me dérouiller et de comprendre que le web m'attire. Le travail à fournir était assez conséquent mais la reprise du code et son apprentissage se sont fait très naturellement.
-        Le format diffère d'une page web classique et rend le positionnement plus difficile ainsi que l'utilisation de Javascript très limité mais ça ne m'a pas empêché de faire une fiche dynamique.</div>
-<p>A custom roleplay sheet made in html et css.</p>
+      <h2>Website posit'it</h2>
+      <p class="text">Il s'agit d'un site de type forum qui ,m'a permi d'apprendre plain de chose utiles. La moderation via une api d'IA ou l'utilisation dune BDD pour afficher sur une carte la ville des utilisateurs.</p>
 
 <div class="LinkOfProject">
    <a href="https://github.com/Audemar-Codding/CustomSheet2024/tree/main" target="_blank"><img src="Pictures/WhiteGitHub.png"/><p>GitHub</p></a>
@@ -294,41 +292,41 @@
 
 
 // Gestion du changement de la langue du site
-var Flags = document.getElementById("Flags");
-var ImgEng = "Pictures/FlagEnglish.png";
-var ImgFr = "Pictures/FlagFrench.png";
+let Flags = document.getElementById("Flags");
+let ImgEng = "Pictures/FlagEnglish.png";
+let ImgFr = "Pictures/FlagFrench.png";
 
   //ce qu'il faut gérer
-  var Nav1 = document.getElementById("skills");
-  var Nav2 = document.getElementById("projets");
+  let Nav1 = document.getElementById("skills");
+  let Nav2 = document.getElementById("projets");
 
-  var Intro = document.getElementById("Intro");
-  var BtnIntro = document.querySelector(".btnsContact");
-  var BtnRDV = document.querySelector(".btnsContact > a:nth-of-type(4) .text")
-  var BtnCV = document.querySelector(".btnsContact > a:nth-of-type(5) .text")
+  let Intro = document.getElementById("Intro");
+  let BtnIntro = document.querySelector(".btnsContact");
+  let BtnRDV = document.querySelector(".btnsContact > a:nth-of-type(4) .text")
+  let BtnCV = document.querySelector(".btnsContact > a:nth-of-type(5) .text")
 
-  var Skills = document.getElementById("Skills");
-  var Languages = document.getElementById("Languages");
-  var TroisWAOR = document.querySelectorAll("#TroisWA .text");
-  var Other = document.getElementById("Other");
+  let Skills = document.getElementById("Skills");
+  let Languages = document.getElementById("Languages");
+  let TroisWAOR = document.querySelectorAll("#TroisWA .text");
+  let Other = document.getElementById("Other");
 
-  var ProjectTitle = document.querySelector("#Projects > h1");
-  var Harpoon = document.getElementById("harpoon");
-  var Cleanning = document.getElementById("cleanningRoad");
-  var FicheCustom = document.getElementById("ficheCustom")
-  var Play = document.querySelectorAll(".Play");
+  let ProjectTitle = document.querySelector("#Projects > h1");
+  let Harpoon = document.getElementById("harpoon");
+  let Cleanning = document.getElementById("cleanningRoad");
+  let FicheCustom = document.getElementById("ficheCustom")
+  let Play = document.querySelectorAll(".Play");
 
-  var HarpoonDescription = document.querySelector("#harpoon .text");
-  var CleanningDescription = document.querySelector("#cleanningRoad .text");
-  var FicheCustomDescription = document.querySelector("#ficheCustom .text");
-  var FicheCustomDescriptionTitre = document.querySelector("#ficheCustom h2");
+  let HarpoonDescription = document.querySelector("#harpoon .text");
+  let CleanningDescription = document.querySelector("#cleanningRoad .text");
+  let FicheCustomDescription = document.querySelector("#ficheCustom .text");
+  let FicheCustomDescriptionTitre = document.querySelector("#ficheCustom h2");
    
-  var ContactText = document.querySelector("#Contact p");
-  var ContactInterview = document.querySelector("#Contact .text");
+  let ContactText = document.querySelector("#Contact p");
+  let ContactInterview = document.querySelector("#Contact .text");
 
-  var Details = document.getElementById("Details");
+  let Details = document.getElementById("Details");
 
-  var LanguageSelected = 1;
+  let LanguageSelected = 1;
 
   
 
@@ -357,15 +355,15 @@ function changeLanguage()
     FicheCustom.children[0].innerText = "Custom Sheet"; 
     Harpoon.children[4].innerText = "My First Typescript game made in one go.";
     Cleanning.children[4].innerText = "A more substantial game, following Harpoon.";
-    FicheCustom.children[4].innerText = "A custom roleplay sheet made in html et css."; 
+    FicheCustom.children[4].innerText = "A forum type website."; 
 
     Play[0].innerText = "Play";
     Play[1].innerText = "Play";
 
       HarpoonDescription.innerText = "This is my \"first\" game, not very ambitious, it was intended to discover the development environment as well as typescript. There are still several bugs to fix but it is fully functional. This is one of the few projects i created in one go without having to come back regularly.";
       CleanningDescription.innerText = "This project was developed on the superpowers game engine, a very little known software and therefore he has limited documentation. I had to learn to code in Typescript and manage on my own in the face of many problems. Throughout the development I fed a dev log every day to keep myself motivated.";
-      FicheCustomDescription.innerText = "This is the project that allowed me to shake off the rust and understand that the web attract me. The work to be provided was quite substantial but the resumption of the code and its learning were done very naturally. The format differs from a classic web page and makes the positioning more difficult as well as the use of Javascript very limited but it did not prevent me from making a dynamic sheet.";
-      FicheCustomDescriptionTitre = "Custom Sheet";
+      FicheCustomDescription.innerText = "It is a forum-type website that has allowed me to learn many useful things, such as moderation via an AI API or using a database to display users' cities on a map.";
+      FicheCustomDescriptionTitre = "Website posit'it";
 
     ContactText.innerHTML ="Feel free to contact me";
     ContactInterview.innerText = " Interview";
@@ -397,12 +395,12 @@ function changeLanguage()
       FicheCustom.children[0].innerText = "Fiche Custom"; 
       Harpoon.children[4].innerText = "Mon premier jeu Typescript fait d'une traite.";
       Cleanning.children[4].innerText = "Un jeu plus conséquent, à la suite de harpoon"; 
-      FicheCustom.children[4].innerText = "Une fiche custom de roleplay faite en html et css."; 
+      FicheCustom.children[4].innerText = "Un site de type forum."; 
 
       HarpoonDescription.innerText = "Il s'agit de mon \"premier\" jeux, peu ambitieux il avait pour but de découvrir l\'environnement de développement ainsi que typescript. Il reste plusieurs bugs à régler mais il est totalement fonctionnel. C\'est un des rares projets créer d\'une traite sans avoir à y revenir régulièrement.";
       CleanningDescription.innerText = "Ce projet a été développé sur le moteur de jeu superpowers, un logiciel très peu connu et donc à la documentation limitée. J\'ai dû apprendre à coder en Typescript et me débrouiller seul face aux nombreux problèmes rencontrés. Durant toute la durée du développement j\'ai nourri un dev log tous les jours afin de me maintenir motivé.";
-      FicheCustomDescription.innerText = "C\'est le projet qui ma permit de me dérouiller et de comprendre que le web m'attire. Le travail à fournir était assez conséquent mais la reprise du code et son apprentissage se sont fait très naturellement. Le format diffère d\'une page web classique et rend le positionnement plus difficile ainsi que l\'utilisation de Javascript très limité mais ça ne m\'a pas empêché de faire une fiche dynamique.";
-      FicheCustomDescriptionTitre = "Fiche Custom";
+      FicheCustomDescription.innerText = "Il s'agit d'un site de type forum qui m'a permis d'apprendre plein de choses utiles, comme la modération via une API d'IA ou l'utilisation d'une base de données pour afficher sur une carte la ville des utilisateurs.";
+      FicheCustomDescriptionTitre = "Site posit'it";
 
       Play[0].innerText = "Jouer";
       Play[1].innerText = "Jouer";
@@ -415,13 +413,13 @@ function changeLanguage()
 
   }
 
-    //changement de la variable qui gére le language 
+    //changement de la letiable qui gére le language 
   LanguageSelected = (LanguageSelected === 1) ? 0 : 1;
 }
 
 
-var Mypicture = document.getElementById("ImageMoi");
-var Intro = document.getElementById("Intro");
+let Mypicture = document.getElementById("ImageMoi");
+let Intro = document.getElementById("Intro");
 let counter = 990;
 let compétences = 30;
 let upExp = 10;
@@ -432,7 +430,7 @@ ImgAlien = "Pictures/GifAlien.webp";
 
 Mypicture.addEventListener('click', function(event) {
 
-    var plusUN = document.createElement('img');
+    let plusUN = document.createElement('img');
     plusUN.src = ImgAlien;
     plusUN.alt = "Top Arrow";
     plusUN.width = "50";
@@ -454,7 +452,7 @@ plusUN.draggable = false;
 
  
 
-  var Timeout = setTimeout(() => {
+  let Timeout = setTimeout(() => {
     plusUN.style.top = (event.clientY - 200) + 'px';
   }, 10);
 
@@ -503,7 +501,7 @@ document.getElementById("ficheCustom").addEventListener('mouseenter', function()
 {document.getElementById("projectFolder").src= FolderGif;})
 
 //Gestion des numéros sur le nav
-var nav = document.querySelector('nav');
+let nav = document.querySelector('nav');
 function onKeyPress(event) {
 
   if(event.code == "Digit0" || event.code == "Numpad0")
@@ -539,7 +537,7 @@ function resize() {
 
 
   const windowWidth = window.innerWidth;
-  var percentAdd;
+  let percentAdd;
 
 // si on arrive < 755px de taille, il faut passer l'image au dessus
 if (windowWidth < 755) 
@@ -601,10 +599,10 @@ window.addEventListener('resize', resize);
 
 
 // Gestion du focus sur les projets
-var imageWindows = document.getElementById("imageWindows");
-var imageWindowsDiv = document.querySelector("#imageWindows > div")
+let imageWindows = document.getElementById("imageWindows");
+let imageWindowsDiv = document.querySelector("#imageWindows > div")
 
-var FocusisOpen = false;
+let FocusisOpen = false;
 
 function FocusImage(imgApp) {
   imageWindows.style.display = "block";
@@ -622,7 +620,7 @@ function GestionFenetre(event) {
   }
 }
 
-var imageWindows = document.getElementById("imageWindows");
+let imageWindows = document.getElementById("imageWindows");
 
 function CloseWindows() {
   imageWindows.style.display = "none";
