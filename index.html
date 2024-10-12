@@ -298,11 +298,7 @@ let ImgFr = "Pictures/FlagFrench.png";
   let FicheCustom = document.getElementById("ficheCustom")
   let Play = document.querySelectorAll(".Play");
 
-  let HarpoonDescription = document.querySelector("#harpoon .text");
-  let CleanningDescription = document.querySelector("#cleanningRoad .text");
-  let FicheCustomDescription = document.querySelector("#ficheCustom .text");
-  let FicheCustomDescriptionTitre = document.querySelector("#ficheCustom h2");
-   
+ 
   let ContactText = document.querySelector("#Contact p");
   let ContactInterview = document.querySelector("#Contact .text");
 
@@ -342,11 +338,6 @@ function changeLanguage()
     Play[0].innerText = "Play";
     Play[1].innerText = "Play";
 
-      HarpoonDescription.innerText = "This is my \"first\" game, not very ambitious, it was intended to discover the development environment as well as typescript. There are still several bugs to fix but it is fully functional. This is one of the few projects i created in one go without having to come back regularly.";
-      CleanningDescription.innerText = "This project was developed on the superpowers game engine, a very little known software and therefore he has limited documentation. I had to learn to code in Typescript and manage on my own in the face of many problems. Throughout the development I fed a dev log every day to keep myself motivated.";
-      FicheCustomDescription.innerText = "It is a forum-type website that has allowed me to learn many useful things, such as moderation via an AI API or using a database to display users\' cities on a map.";
-      FicheCustomDescriptionTitre = "Website posit\'it";
-
     ContactText.innerHTML ="Feel free to contact me";
     ContactInterview.innerText = " Interview";
 
@@ -377,11 +368,6 @@ function changeLanguage()
       Harpoon.children[2].innerText = "Mon premier jeu Typescript fait d'une traite.";
       Cleanning.children[2].innerText = "Un jeu plus conséquent, à la suite de harpoon"; 
       FicheCustom.children[2].innerText = "Un site de type forum."; 
-
-      HarpoonDescription.innerText = "Il s\'agit de mon \"premier\" jeux, peu ambitieux il avait pour but de découvrir l\'environnement de développement ainsi que typescript. Il reste plusieurs bugs à régler mais il est totalement fonctionnel. C\'est un des rares projets créer d\'une traite sans avoir à y revenir régulièrement.";
-      CleanningDescription.innerText = "Ce projet a été développé sur le moteur de jeu superpowers, un logiciel très peu connu et donc à la documentation limitée. J\'ai dû apprendre à coder en Typescript et me débrouiller seul face aux nombreux problèmes rencontrés. Durant toute la durée du développement j\'ai nourri un dev log tous les jours afin de me maintenir motivé.";
-      FicheCustomDescription.innerText = "Il s\'agit d'un site de type forum qui m'a permis d'apprendre plein de choses utiles, comme la modération via une API d\'IA ou l\'utilisation d\'une base de données pour afficher sur une carte la ville des utilisateurs.";
-      FicheCustomDescriptionTitre = "Site posit\'it";
 
       Play[0].innerText = "Jouer";
       Play[1].innerText = "Jouer";
